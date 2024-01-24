@@ -86,12 +86,15 @@ function calcularAreaEPerimetroCircular(raio) {
 calcularAreaEPerimetroCircular(5)
 
 // Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+
+// verifique se o codigo abaixo esta correto. É um codigo em javascript que cria a tabuada de um numero passado por parametro para a função de calcular tabuada
 function calculaTabuada(numero) {
-    for(let i = 0; i < numero; i++) {
-        let resultado = numero * i;
-        return resultado;
+    let resultado = 0
+    for(let i = 0; i <= 10; i++) {
+        resultado = numero * i;
+        console.log(`${numero} x ${i} = ${resultado}`)
     }
-    
+    return resultado;
 }
 
-console.log(calculaTabuada(5));
+calculaTabuada(2)
